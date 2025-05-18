@@ -5,7 +5,7 @@ main {
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgba(0, 42, 255, 0.638);
+    border: 1px solid rgb(0, 242, 255);
     padding: 1rem;
     background-color: darkblue;
     color: black;
