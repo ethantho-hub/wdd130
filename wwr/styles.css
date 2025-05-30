@@ -1,16 +1,6 @@
-header {
-    background-color: var(grey);
-    color: var(grey);
-    margin: 1rem auto;
-	display: grid;
-	grid-template-columns: 120px 1fr 1fr;
-	align-items: center;
-	border-bottom: 1px solid #ccc;
-	max-width: 1000px;
-  }
 .logo img {
 	margin: 0 0.25rem 0 1rem;
-	width: 64px;
+	width: 15px;
 	height: auto;
 }
 
@@ -25,10 +15,7 @@ body {
   color: var(--accent1-color);
 }
 
-header, main, footer {
-  width: 840px;
-  margin: 0 auto;
-}
+
 h1 {
 	font-size: 2rem;
 	font-family: Arial, sans-serif;
@@ -39,38 +26,37 @@ h1, h2 {
   color: var(--primary-color);
 }
 li{
-    display: inline;
-}
-header nav {
-	display: flex;
-	flex-wrap: wrap;
-	list-style: none;
-    justify-content: flex-end;
-	padding: 0;
-	font-family: Arial, sans-serif;
-}
-header nav li {
-	flex: 1 1 auto;
-    justify-content: flex-end;
-}
-header nav a {
-	display: block;
-    justify-content: block-end;
-	color: navy;
-	padding: 20px;
-	text-decoration: none;
-	font-size: 1.2rem;
-}
-header nav a:hover {
-	color: white;
-	font-weight: 700;
-	text-decoration: underline;
-}
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
+  display:inline;
 }
 
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: grey;
+}
+
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul li {
+    display: block;
+}
+
+header nav ul li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.raftinglogo{
+    display: flex;
+    justify-content: flex-start;
+}
 .socialmedia a {
     text-decoration: none;
 }
@@ -89,7 +75,7 @@ h1 {
   text-align: center;
   opacity: 0.7;
   background-color: var(--accent1-color);
-  color: #fff; /* white text - make sure there is enough contrast with the background-color */
+  color: white; /* white text - make sure there is enough contrast with the background-color */
 }
 
 .hero article img {
