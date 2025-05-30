@@ -38,7 +38,7 @@ h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
-.navigation {
+header .navigation {
 	display: flex;
 	flex-wrap: wrap;
 	list-style: none;
@@ -46,11 +46,11 @@ h1, h2 {
 	padding: 0;
 	font-family: Arial, sans-serif;
 }
-.navigation li {
+header .navigation li {
 	flex: 1 1 auto;
     justify-content: flex-end;
 }
-.navigation a {
+header .navigation a {
 	display: block;
     justify-content: block-end;
 	color: navy;
@@ -58,7 +58,7 @@ h1, h2 {
 	text-decoration: none;
 	font-size: 1.2rem;
 }
-.navigation a:hover {
+header .navigation a:hover {
 	color: white;
 	font-weight: 700;
 	text-decoration: underline;
