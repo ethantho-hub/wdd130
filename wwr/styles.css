@@ -61,10 +61,21 @@ header nav ul li a {
     text-decoration: none;
 }
 
-.hero img {
-    display: block;
+#title {
+    background-image:url(../wwr/images/rafting41_1024.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    display: table;
+    height: 800px;
     width: 100%;
-    height: auto;
+    text-align: center;
+}
+.title {
+    display: table-cell;
+    color: white;
+    vertical-align: middle;
+    font-size: 1.5em;
 }
 
 h1 {
