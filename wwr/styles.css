@@ -1,6 +1,5 @@
 .logo img {
-	margin: 0 0.25rem 0 1rem;
-	width: 15px;
+	width: 10px;
 	height: auto;
 }
 
@@ -19,21 +18,18 @@ body {
 h1 {
 	font-size: 2rem;
 	font-family: Arial, sans-serif;
+  color:white;
 }
 
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-}
 li{
   display:inline;
 }
+
 
 header nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background-color: grey;
 }
 
@@ -75,21 +71,20 @@ header nav ul li a {
     display: table-cell;
     color: white;
     vertical-align: middle;
-    font-size: 1.5em;
+    font-size: 2rem;
+}
+#article {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 5% 0;
+    color: rgb(255, 255, 255)
 }
 
-h1 {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  padding: 16px;
-  text-align: center;
-  opacity: 0.7;
-  background-color: var(--accent1-color);
-  color: white; /* white text - make sure there is enough contrast with the background-color */
+.article-image {
+  padding: 0 0 20% 0;
 }
 
-.hero article img {
-  float: right;
-  width: 125px;
-}
+
+
+
