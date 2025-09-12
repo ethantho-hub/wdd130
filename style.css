@@ -1,20 +1,34 @@
+/* Layout for the main content and sidebar */
+body {
+    display: flex;              /* Places main and aside side by side */
+    justify-content: center;    /* Centers content horizontally */
+    gap: 2rem;                  /* Space between main and aside */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 2rem;
+    background-color: #f5f5f5;  /* Optional light background */
+}
+
 main {
     max-width: 640px;
 }
 
+/* Sidebar styling */
 aside {
     width: 20rem;
-    margin: 1rem;
+    margin: 1rem 0;                 /* Vertical margin only (flex gap handles horizontal) */
     border: 1px solid rgb(0, 242, 255);
     padding: 1rem;
     background-color: rgb(79, 79, 79);
-    color: black;
+    color: #ffffff;                 /* White text for contrast */
     text-align: center;
+    border-radius: 6px;             /* Slightly rounded corners for a modern look */
 }
 
 aside img {
     width: 200px;
     height: auto;
+    border-radius: 4px;             /* Optional: soften image corners */
 }
 
 main img {
@@ -22,12 +36,16 @@ main img {
     height: auto;
 }
 
+/* Paragraph spacing */
 p {
-    padding: 0;
+    margin: 1rem 0;                 /* Add vertical space */
+    padding: 0;                     /* Remove default padding if any */
 }
 
+
 footer {
-    margin-top: 15px;
-    border-top: 1px solid;
     text-align: center;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    color: #333;
 }
