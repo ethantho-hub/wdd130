@@ -1,51 +1,113 @@
-/* Layout for the main content and sidebar */
+/* ----- Base Reset & Typography ----- */
 body {
-    display: flex;              /* Places main and aside side by side */
-    justify-content: center;    /* Centers content horizontally */
-    gap: 2rem;                  /* Space between main and aside */
-    font-family: Arial, sans-serif;
     margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* ----- Page Grid Layout ----- */
+body {
+    display: grid;
+    grid-template-columns: 1fr 300px;   /* main + sidebar */
+    grid-template-rows: auto 1fr auto;  /* header, content, footer */
+    grid-template-areas:
+        "header header"
+        "main   aside"
+        "footer footer";
+    gap: 2rem;
     padding: 2rem;
-    background-color: #f5f5f5;  /* Optional light background */
 }
 
+/* ----- Header & Nav ----- */
+header {
+    grid-area: header;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid #ddd;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0077b6;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #023e8a;
+}
+
+/* ----- Main Content ----- */
 main {
+    grid-area: main;
     max-width: 640px;
-}
-
-/* Sidebar styling */
-aside {
-    width: 20rem;
-    margin: 1rem 0;                 /* Vertical margin only (flex gap handles horizontal) */
-    border: 1px solid rgb(0, 242, 255);
-    padding: 1rem;
-    background-color: rgb(79, 79, 79);
-    color: #ffffff;                 /* White text for contrast */
-    text-align: center;
-    border-radius: 6px;             /* Slightly rounded corners for a modern look */
-}
-
-aside img {
-    width: 200px;
-    height: auto;
-    border-radius: 4px;             /* Optional: soften image corners */
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 main img {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     height: auto;
+    display: block;
+    margin-bottom: 1rem;
 }
 
-/* Paragraph spacing */
-p {
-    margin: 1rem 0;                 /* Add vertical space */
-    padding: 0;                     /* Remove default padding if any */
+/* ----- Sidebar ----- */
+aside {
+    grid-area: aside;
+    background-color: rgb(79, 79, 79);
+    color: #ffffff;
+    padding: 1.5rem;
+    border: 1px solid rgb(0, 242, 255);
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+aside img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
 
+/* ----- Footer ----- */
 footer {
+    grid-area: footer;
     text-align: center;
     padding: 1rem;
     background-color: #f0f0f0;
     color: #333;
+    border-top: 2px solid #ddd;
+}
+
+/* ----- Paragraph spacing ----- */
+p {
+    margin: 1rem 0;
+}
+
+/* ----- Responsive: stack columns on narrow screens ----- */
+@media (max-width: 800px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "aside"
+            "footer";
+    }
+
+    aside {
+        max-width: 100%;
+    }
 }
