@@ -53,6 +53,7 @@ main {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* Images in main by default */
 main img {
     width: 100%;
     max-width: 300px;
@@ -109,5 +110,32 @@ p {
 
     aside {
         max-width: 100%;
+    }
+}
+
+/* ===== New Profile-Picture Side Layout ===== */
+.about-container {
+    display: flex;
+    align-items: flex-start;  /* top-align image with text */
+    gap: 1.5rem;              /* space between image and text */
+    margin-top: 1rem;
+}
+
+.profile-pic {
+    width: 200px;   /* size of profile picture */
+    height: auto;
+    border-radius: 6px;
+}
+
+.about-text {
+    flex: 1;        /* let text take remaining space */
+}
+
+/* Stack image and text on small screens */
+@media (max-width: 600px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }
