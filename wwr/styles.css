@@ -26,25 +26,30 @@ li{
   display:inline;
 }
 
+/* Style the entire nav bar as a horizontal flex container */
 nav {
   display: flex;
   justify-content: space-between;   /* logo left, links right */
-  align-items: center;
+  align-items: center;              /* vertical center alignment */
   background: grey;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
 }
 
+/* Remove bullets and align nav links horizontally */
 nav ul {
   list-style: none;
   display: flex;
   gap: 1rem;
   margin: 0;
+  padding: 0;
 }
 
+/* Links */
 nav a {
   color: white;
   text-decoration: none;
   padding: 0.5rem 0.75rem;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 nav a:hover {
@@ -52,9 +57,12 @@ nav a:hover {
   border-radius: 4px;
 }
 
-
-
-
+/* Logo image sizing */
+.logo {
+  height: 60px;        /* adjust as needed */
+  width: auto;         /* keep aspect ratio */
+  display: block;
+}
 
 .socialmedia a {
     text-decoration: none;
