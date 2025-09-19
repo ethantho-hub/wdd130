@@ -213,3 +213,9 @@ header {
 	border-width: 1px;
 	border-style: solid;
 }
+/* Smaller social-media icons */
+.socialmedia img {
+  width: 32px;      /* adjust to the size you like, e.g., 24–40px */
+  height: 32px;     /* keep them square */
+  margin: 0 6px;    /* space between icons */
+}
