@@ -219,3 +219,22 @@ header {
   height: 32px;     /* keep them square */
   margin: 0 6px;    /* space between icons */
 }
+.history-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.adventure-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.adventure-gallery figure {
+  text-align: center;
+}
