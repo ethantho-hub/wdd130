@@ -244,3 +244,33 @@ body {font-family: Arial, Helvetica, sans-serif; background:#fff; color:#333;}
   display: block;
   margin: 0 auto 0.5rem;
 }
+
+
+/* ===== FOOTER ===== */
+.site-footer {
+  background: #d3c7f6;  /* purple like header */
+  padding: 1rem 0;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* text left, icons right */
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.socialmedia a {
+  margin-left: 0.5rem;
+}
+
+.socialmedia img {
+  width: 28px;
+  height: 28px;
+  vertical-align: middle;
+}
